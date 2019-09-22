@@ -17,11 +17,11 @@ public class PeakElement {
     /**
      * O(logn) solution for finding peak element using binary Searc
      */
-    public static findPeakElementBinarySearch(int arr[],int low,int high){
-        if(loww == high)
+    public static int findPeakElementBinarySearch(int arr[],int low,int high){
+        if(low == high)
             return 0;
-        int middle = (low + high) /2;
-        if(arr[middle] > arr[middle + 1])
+        int mid = (low + high) /2;
+        if(arr[mid] > arr[mid + 1])
             return findPeakElementBinarySearch(arr,low,mid);
         return findPeakElementBinarySearch(arr,mid + 1,high);
     }
