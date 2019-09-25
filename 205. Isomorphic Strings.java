@@ -78,6 +78,7 @@ class Solution {
           if(s.length() != t.length()){
             return false; //Return false, if of unequal length
         }
+        
 		int [] arr1 = new int[128];
         int [] arr2 = new int[128];
         for(int i =0;i<s.length();++i){
